@@ -4,26 +4,29 @@
 
       <div class="site-blocks-cover inner-page" data-aos="fade">
          <div class="container">
-         <div class="row">
-            <div class="col-md-6 ml-auto order-md-2 align-self-start">
-               <div class="site-block-cover-content">
-               <h2 class="sub-title">#New Summer Collection 2019</h2>
-               <h1>Arrivals Sales</h1>
-               <p><a href="#" class="btn btn-black rounded-0">Shop Now</a></p>
+            <div class="row">
+               <div class="col-md-6 ml-auto order-md-2 align-self-start">
+                  <div class="site-block-cover-content">
+                  <h2 class="sub-title">#New Summer Collection 2019</h2>
+                  <h1>Arrivals Sales</h1>
+                  <p><a href="#" class="btn btn-black rounded-0">Shop Now</a></p>
+                  </div>
+               </div>
+               <div class="col-md-6 order-1 align-self-end">
+                  <img src="/template/images/model_4.png" alt="Image" class="img-fluid">
                </div>
             </div>
-            <div class="col-md-6 order-1 align-self-end">
-               <img src="/template/images/model_4.png" alt="Image" class="img-fluid">
-            </div>
-         </div>
          </div>
       </div>
 
       <div class="custom-border-bottom py-3">
          <div class="container">
-         <div class="row">
-            <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Shop</strong></div>
-         </div>
+            <div class="row">
+               <div class="col-md-12 mb-0">
+                  <router-link to="/">Home</router-link> <span class="mx-2 mb-0">/</span> 
+                  <strong class="text-black">Shop</strong>
+               </div>
+            </div>
          </div>
       </div>
 
@@ -43,9 +46,9 @@
                         Latest
                      </button>
                      <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                        <a class="dropdown-item" href="#">Men</a>
-                        <a class="dropdown-item" href="#">Women</a>
-                        <a class="dropdown-item" href="#">Children</a>
+                        <router-link class="dropdown-item" to="/shop/category/man">Men</router-link>
+                        <router-link class="dropdown-item" to="/shop/category/girl">Women</router-link>
+                        <router-link class="dropdown-item" to="/shop/category/shoes">Shoes</router-link>
                      </div>
                      </div>
                      <div class="btn-group">
@@ -63,102 +66,14 @@
                </div>
                </div>
 
-               <div class="row mb-5">
+            <div class="row mb-5">
 
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/prod_2.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Gray Shoe</a></h2>
-                  <strong class="item-price">$20.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/prod_3.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Blue Shoe High Heels</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/model_5.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Denim Jacket</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/prod_1.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Leather Green Bag</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/model_1.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Smooth Cloth</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/model_7.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Yellow Jacket</a></h2>
-                  <strong class="item-price">$58.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/prod_2.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Gray Shoe</a></h2>
-                  <strong class="item-price">$20.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/prod_3.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Blue Shoe High Heels</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/model_5.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Denim Jacket</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/prod_1.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Leather Green Bag</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/model_1.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Smooth Cloth</a></h2>
-                  <strong class="item-price"><del>$46.00</del> $28.00</strong>
-               </div>
-
-               <div class="col-lg-6 col-md-6 item-entry mb-4">
-                  <a href="#" class="product-item md-height bg-gray d-block">
-                     <img src="/template/images/model_7.png" alt="Image" class="img-fluid">
-                  </a>
-                  <h2 class="item-title"><a href="#">Yellow Jacket</a></h2>
-                  <strong class="item-price">$58.00</strong>
+               <div class="col-lg-6 col-md-6 item-entry mb-4"  v-for="source in dataItem" v-bind:key='source.ids'>
+                  <router-link :to="{name: 'item', params: {id: source.id}}" class="product-item md-height bg-gray d-block">
+                     <img :src="'/template/images/' +source.img" alt="Image" class="img-fluid">
+                  </router-link>
+                  <h2 class="item-title"><a href="#">{{source.itemName}}</a></h2>
+                  <strong class="item-price">{{source.priceTag}}</strong>
                </div>
 
             </div> 
@@ -187,9 +102,9 @@
                <div class="border p-4 rounded mb-4">
                <h3 class="mb-3 h6 text-uppercase text-black d-block">Categories</h3>
                <ul class="list-unstyled mb-0">
-                  <li class="mb-1"><a href="#" class="d-flex"><span>Men</span> <span class="text-black ml-auto">(2,220)</span></a></li>
-                  <li class="mb-1"><a href="#" class="d-flex"><span>Women</span> <span class="text-black ml-auto">(2,550)</span></a></li>
-                  <li class="mb-1"><a href="#" class="d-flex"><span>Children</span> <span class="text-black ml-auto">(2,124)</span></a></li>
+                  <li class="mb-1"><router-link to="/shop/category/man" class="d-flex"><span>Men</span> <span class="text-black ml-auto">(2,220)</span></router-link></li>
+                  <li class="mb-1"><router-link to="/shop/category/girl" class="d-flex"><span>Women</span> <span class="text-black ml-auto">(2,550)</span></router-link></li>
+                  <li class="mb-1"><router-link to="/shop/category/shoes" class="d-flex"><span>Shoes</span> <span class="text-black ml-auto">(2,124)</span></router-link></li>
                </ul>
                </div>
 
@@ -266,3 +181,26 @@
    </div>
 
 </template>
+
+
+<script>
+export default {
+
+   name: 'sources',
+   data () {
+      return {
+          heading: 'Popular Product',
+          dataItem: [
+            {id: '1', img: 'prod_2.png', itemName: 'Gray Shoe', priceTag: '$20.00', kategory: 'shoes'},
+            {id: '2', img: 'prod_3.png', itemName: 'Blue Shoe High Heels', priceTag: '$46.00' , kategory: 'shoes'},
+            {id: '3', img: 'model_5.png', itemName: 'Denim Jacket', priceTag: '$34.00', kategory: 'men'},
+            {id: '4', img: 'prod_1.png', itemName: 'Leather Green Bag', priceTag: '$37.00', kategory: 'woman'},
+            {id: '5', img: 'model_1.png', itemName: 'Smooth Cloth', priceTag: '$46.00', kategory: 'woman'},
+            {id: '6', img: 'model_7.png', itemName: 'Yellow Jacket', priceTag: '$54.00', kategory: 'men'}
+          ]
+      }
+   }
+
+}
+
+</script>

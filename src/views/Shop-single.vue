@@ -29,31 +29,31 @@
                   <p><strong class="text-primary h4">{{item.priceTag}}</strong></p>
                   <div class="mb-1 d-flex">
                   <label for="option-sm" class="d-flex mr-3 mb-3">
-                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-sm" name="shop-sizes"></span> <span class="d-inline-block text-black">Small</span>
+                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-sm" name="shop-sizes"></span> <span class="d-inline-block text-black">S</span>
                   </label>
                   <label for="option-md" class="d-flex mr-3 mb-3">
-                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-md" name="shop-sizes"></span> <span class="d-inline-block text-black">Medium</span>
+                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-md" name="shop-sizes"></span> <span class="d-inline-block text-black">M</span>
                   </label>
                   <label for="option-lg" class="d-flex mr-3 mb-3">
-                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-lg" name="shop-sizes"></span> <span class="d-inline-block text-black">Large</span>
+                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-lg" name="shop-sizes"></span> <span class="d-inline-block text-black">L</span>
                   </label>
                   <label for="option-xl" class="d-flex mr-3 mb-3">
-                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-xl" name="shop-sizes"></span> <span class="d-inline-block text-black"> Extra Large</span>
+                     <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-xl" name="shop-sizes"></span> <span class="d-inline-block text-black">XL</span>
                   </label>
                   </div>
                   <div class="mb-5">
-                  <div class="input-group mb-3" style="max-width: 120px;">
-                  <div class="input-group-prepend">
-                     <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
-                  </div>
-                  <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                  <div class="input-group-append">
-                     <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
-                  </div>
-                  </div>
+                    <div class="input-group mb-3" style="max-width: 120px;">
+                      <div class="input-group-prepend">
+                        <button v-on:click="decreaseItem" class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+                      </div>
+                    <input type="text" class="form-control text-center" min="0" :value="stock" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      <div class="input-group-append">
+                        <button v-on:click="addItem" class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+                      </div>
+                    </div>
 
                   </div>
-                  <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</a></p>
+                  <p><router-link to="/cart/item" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</router-link></p>
 
                </div>
           </div>
@@ -70,6 +70,7 @@ export default {
    name: 'items',
     data() {
       return{
+         stock: '1',
          router: this.$router.history.current.params.id,
          dataSource: [
             {id: '1', img: 'prod_2.png', itemName: 'Gray Shoe', priceTag: '$20.00'},
@@ -81,13 +82,29 @@ export default {
           ]
       } //return
    }, //data
+  
+   methods: {
+     addItem: function(){
+      if(this.stock < 15){
+        this.stock++
+      }
+     },
+     decreaseItem: function(){
+       if(this.stock > 0){
+         this.stock--
+       }
+     }
+   },
    computed: {
     filteredData: function(){
       return this.dataSource.filter((item) => {
          return item.id.match(this.router)
       });
     }
-   }
+   }, //computed
+     mounted () {
+      window.scrollTo(0, 0)
+    }
 
 } // export
 </script>

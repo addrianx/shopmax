@@ -3,10 +3,12 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 
-Vue.config.productionTip = false
-
 new Vue({
-
+    methods: {
+        data: function() {
+            console.log('ini adalah inheritance');
+        }
+    } //computed
 })
 
 new Vue({
